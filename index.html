@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ระบบตรวจสอบผลการเรียนออนไลน์</title>
+    
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/12772/12772205.png">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/12772/12772205.png">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <style>
+        body {
+            background-color: #f0f0f0; /* สีพื้นหลังระหว่างรอโหลด */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            flex-direction: column;
+        }
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #ddd;
+            border-top: 5px solid #3498db; /* สีหมุนๆ */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+
+    <script>
+        // 3. ใส่ลิงก์ Google Apps Script ของคุณตรงนี้!
+        // (ลิงก์ยาวๆ ที่ลงท้ายด้วย /exec)
+        var targetUrl = "https://script.google.com/a/macros/yabee.ac.th/s/AKfycbwI2w-ltauVI1xanNriw0BOevtnWaNOyZWAxSwXcjlTV_r8ok9K76e0Yn_iNw7vS9hYNw/exec";
+
+        // สั่งให้กระโดดไปหน้า App
+        window.location.href = targetUrl;
+    </script>
+</head>
+<body>
+    <div class="loader"></div>
+    <p>กำลังเข้าสู่ระบบ...</p>
+</body>
+</html>
